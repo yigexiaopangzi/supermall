@@ -5,14 +5,119 @@
     <home-swiper :banners="banners"></home-swiper>
     <recommend-view :recommends="recommends"></recommend-view>
     <feature-view></feature-view>
+    <tab-control class="tabControl" :titles="['流行','新款','精选']"></tab-control>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </div>
 </template>
 
 <script>
-import  NavBar from 'components/common/navbar/NavBar'
 import HomeSwiper from './childComps/HomeSwiper'
 import RecommendView from './childComps/HomeRecommendView'
 import FeatureView from './childComps/FeatureView'
+
+import NavBar from 'components/common/navbar/NavBar'
+import TabControl from 'components/content/tabControl/TabControl'
 
 import {getHomeMultidata} from 'network/home'
 
@@ -31,10 +136,11 @@ export default {
     })
   },
   components: {
-    NavBar,
     HomeSwiper,
     RecommendView,
-    FeatureView
+    FeatureView,
+    NavBar,
+    TabControl
   }
 }
 
@@ -53,4 +159,9 @@ export default {
   right: 0;
   z-index: 9;
 } 
+
+.tabControl{
+  position: sticky;
+  top: 44px;
+}
 </style>
